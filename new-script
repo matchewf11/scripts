@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+filename="$1"
+
+cat >> "$filename" <<'EOF'
+#!/usr/bin/env bash
+set -euo pipefail
+
+echo "Hello World"
+
+# vim: ft=bash
+EOF
+
+chmod u+x "$filename"
+
+# vim: ft=bash
