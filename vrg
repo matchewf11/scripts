@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-pattern="$1"
+pattern="${1:-}"
 
 selected=$(rg --line-number --no-heading "$pattern" | fzf) || exit 0
 
