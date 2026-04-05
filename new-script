@@ -14,6 +14,6 @@ EOF
 
 chmod u+x "$filename"
 
-vim "$filename"
+$EDITOR "$filename"
 
 # vim: ft=bash
